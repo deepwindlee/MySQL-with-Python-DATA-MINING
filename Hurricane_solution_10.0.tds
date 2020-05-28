@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10000.16.0618.1635                               -->
+<datasource formatted-name='Hurricane' inline='true' source-platform='win' version='10.0' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <connection class='federated'>
+    <named-connections>
+      <named-connection caption='hurricane' name='excel-direct.01cglai197v0i9166rduk1yz7eol'>
+        <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:\Perforce\training\eLearning\Lessons_Production\Customizing a Data Source\424195 Activity\Data\hurricane.xlsx' interpretationMode='0' password='' server='' validate='no' />
+      </named-connection>
+    </named-connections>
+    <relation connection='excel-direct.01cglai197v0i9166rduk1yz7eol' name='Hurricane Data' table='[&apos;Hurricane Data$&apos;]' type='table'>
+      <columns gridOrigin='A1:L7152:no:A1:L7152:0' header='yes' outcome='2'>
+        <column datatype='string' name='Basin' ordinal='0' />
+        <column datatype='integer' name='Category' ordinal='1' />
+        <column datatype='datetime' name='Date' ordinal='2' />
+        <column datatype='integer' name='Storm #' ordinal='3' />
+        <column datatype='string' name='Storm Name' ordinal='4' />
+        <column datatype='integer' name='Year' ordinal='5' />
+        <column datatype='integer' name='Pressure (mb)' ordinal='6' />
+        <column datatype='real' name='Storm direction (deg)' ordinal='7' />
+        <column datatype='real' name='Storm speed (mph)' ordinal='8' />
+        <column datatype='integer' name='Wind speed (kt)' ordinal='9' />
+        <column datatype='real' name='Lat (deg)' ordinal='10' />
+        <column datatype='real' name='Long (deg)' ordinal='11' />
+      </columns>
+    </relation>
+    <metadata-records>
+      <metadata-record class='column'>
+        <remote-name>Basin</remote-name>
+        <remote-type>130</remote-type>
+        <local-name>[Basin]</local-name>
+        <parent-name>[Hurricane Data]</parent-name>
+        <remote-alias>Basin</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+        <collation flag='1' name='LEN_RUS_S2' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Category</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[Category]</local-name>
+        <parent-name>[Hurricane Data]</parent-name>
+        <remote-alias>Category</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Date</remote-name>
+        <remote-type>7</remote-type>
+        <local-name>[Date]</local-name>
+        <parent-name>[Hurricane Data]</parent-name>
+        <remote-alias>Date</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>datetime</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Storm #</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[Storm #]</local-name>
+        <parent-name>[Hurricane Data]</parent-name>
+        <remote-alias>Storm #</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Storm Name</remote-name>
+        <remote-type>130</remote-type>
+        <local-name>[Storm Name]</local-name>
+        <parent-name>[Hurricane Data]</parent-name>
+        <remote-alias>Storm Name</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+        <collation flag='1' name='LEN_RUS_S2' />
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Year</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[Year]</local-name>
+        <parent-name>[Hurricane Data]</parent-name>
+        <remote-alias>Year</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Pressure (mb)</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[Pressure (mb)]</local-name>
+        <parent-name>[Hurricane Data]</parent-name>
+        <remote-alias>Pressure (mb)</remote-alias>
+        <ordinal>6</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Storm direction (deg)</remote-name>
+        <remote-type>5</remote-type>
+        <local-name>[Storm direction (deg)]</local-name>
+        <parent-name>[Hurricane Data]</parent-name>
+        <remote-alias>Storm direction (deg)</remote-alias>
+        <ordinal>7</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>15</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Storm speed (mph)</remote-name>
+        <remote-type>5</remote-type>
+        <local-name>[Storm speed (mph)]</local-name>
+        <parent-name>[Hurricane Data]</parent-name>
+        <remote-alias>Storm speed (mph)</remote-alias>
+        <ordinal>8</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>15</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Wind speed (kt)</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[Wind speed (kt)]</local-name>
+        <parent-name>[Hurricane Data]</parent-name>
+        <remote-alias>Wind speed (kt)</remote-alias>
+        <ordinal>9</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Lat (deg)</remote-name>
+        <remote-type>5</remote-type>
+        <local-name>[Lat (deg)]</local-name>
+        <parent-name>[Hurricane Data]</parent-name>
+        <remote-alias>Lat (deg)</remote-alias>
+        <ordinal>10</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>15</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Long (deg)</remote-name>
+        <remote-type>5</remote-type>
+        <local-name>[Long (deg)]</local-name>
+        <parent-name>[Hurricane Data]</parent-name>
+        <remote-alias>Long (deg)</remote-alias>
+        <ordinal>11</ordinal>
+        <local-type>real</local-type>
+        <aggregation>Sum</aggregation>
+        <precision>15</precision>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='capability'>
+        <remote-name />
+        <remote-type>0</remote-type>
+        <parent-name>[Hurricane Data]</parent-name>
+        <remote-alias />
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='integer' name='context'>0</attribute>
+          <attribute datatype='string' name='gridOrigin'>&quot;A1:L7152:no:A1:L7152:0&quot;</attribute>
+          <attribute datatype='boolean' name='header'>true</attribute>
+          <attribute datatype='integer' name='outcome'>2</attribute>
+        </attributes>
+      </metadata-record>
+    </metadata-records>
+  </connection>
+  <aliases enabled='yes' />
+  <column aggregation='Sum' datatype='integer' name='[Category]' role='dimension' type='ordinal' />
+  <column aggregation='Avg' caption='Latitude' datatype='real' name='[Lat (deg)]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+  <column aggregation='Avg' caption='Longitude' datatype='real' name='[Long (deg)]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+  <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+    <calculation class='tableau' formula='1' />
+  </column>
+  <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+  <column-instance column='[Category]' derivation='None' name='[none:Category:ok]' pivot='key' type='ordinal' />
+  <layout dim-ordering='alphabetic' dim-percentage='0.431542' measure-ordering='alphabetic' measure-percentage='0.568458' show-structure='true' />
+  <style>
+    <style-rule element='mark'>
+      <encoding attr='color' field='[none:Category:ok]' type='palette'>
+        <map to='#4e79a7'>
+          <bucket>0</bucket>
+        </map>
+        <map to='#76b7b2'>
+          <bucket>3</bucket>
+        </map>
+        <map to='#9c755f'>
+          <bucket>4</bucket>
+        </map>
+        <map to='#bab0ac'>
+          <bucket>5</bucket>
+        </map>
+        <map to='#e15759'>
+          <bucket>2</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>1</bucket>
+        </map>
+      </encoding>
+    </style-rule>
+  </style>
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+  </semantic-values>
+</datasource>
